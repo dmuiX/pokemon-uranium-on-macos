@@ -37,19 +37,19 @@ brew update
 
 print_step 3
 write_bold "Tapping caskroom"
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 print_step 4
 write_bold "Tapping caskroom/versions"
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
 print_step 5
 write_bold "Installing XQuartz"
-brew cask install caskroom/cask/xquartz
+brew install xquartz
 
 print_step 6
 write_bold "Installing Wine Staging"
-brew cask install caskroom/versions/wine-staging
+brew install wine-staging
 
 print_step 7
 write_bold "Installing Winetricks"
@@ -80,4 +80,3 @@ rm -rf $(brew --cache)
 
 write_bold "Done!"
 write_red_bold "Wait for all Wine configuration to finish (wait for any remaining windows to close), then REBOOT and check the guide on GitHub for next steps"
-
